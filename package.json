@@ -1,0 +1,31 @@
+{
+  "name": "cfportfolio",
+  "version": "1.0.0",
+  "description": "The Portfolio Website Linking to all of Cody Frazier's Significant Projects.",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "build:dev": "npm run build -- --watch --mode=development",
+    "start:dev": "nodemon server.js --ignore dist/ --ignore src/ & npm run build:dev"
+  },
+  "author": "Cody Frazier",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.18.0",
+    "@babel/preset-react": "^7.17.12",
+    "babel-loader": "^8.2.5",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16",
+    "path": "^0.12.7",
+    "react-router-dom": "^6.3.0"
+  }
+}
