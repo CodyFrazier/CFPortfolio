@@ -1,18 +1,22 @@
 html{
     width: 100%;
     height: 100%;
+    display: flex;
+    flex: 1;
 }
 
 body{
     width: 100%;
     height: 100%;
     display: flex;
+    flex: 1;
     margin: 0rem;
     background-color: #131313;
 }
 
 h1, h2, h3, h4, h5, h6{
     margin: 0;
+    padding: 0;
 }
 
 ul{
@@ -30,7 +34,6 @@ main{
 footer{
     flex-shrink: 1;
     flex-grow: 0;
-    padding: .5rem;
     font-size: 18px;
     background-image: linear-gradient(#131313, #1c5d83, #1c5d83, #1c5d83, #1c5d83, #1c5d83, #1c5d83);
     color: #efefef;
@@ -57,6 +60,7 @@ select:focus{
     display: flex;
     flex: 1;
     flex-flow: column nowrap;
+    min-width: 100vw;
 }
 
 .centerText{

@@ -16,17 +16,49 @@ console.log('Loading App...');
 
 const App = () => {
     //State
-
-    //UseEffects
+    const [breakpoint, setBreakpoint] = useState({isLarge: window.innerWidth > 789 ? true : false, width: window.innerWidth });
 
     //Methods
+    const checkWindowSize = () => {
+        /* Window Size Rerender Safety Check: 
+        console.log('Resize Event Detected...');
+        console.log(`Window Width: ${ window.innerWidth }`)
+        */
+        //Expand elses as more breakpoints become reasonable to use
+        if(breakpoint.width != window.innerWidth){
+            if(window.innerWidth > 789){
+                setBreakpoint({
+                    isLarge: true,
+                    width: window.innerWidth
+                })
+            }else{
+                setBreakpoint({
+                    isLarge: false,
+                    width: window.innerWidth
+                })
+            }
+        }
+        
+    }
+
+    //UseEffects
+    
+    useEffect(() => {
+        window.addEventListener('resize', checkWindowSize)
+
+        //Since React rerenders components constantly, the useEffect will create a memory leak with this V
+        return() => {
+            window.removeEventListener('resize', checkWindowSize)
+        }
+    }, [checkWindowSize])
+    
 
     return (
     <div id = 'container'>
         <Router>
-            <NavBar />
+            <NavBar bp = { breakpoint } />
             
-            <main className = 'columnNW bgDG alignCenter'>
+            <main className = 'columnNW bgDG alignCenter widthundred'>
                 <Routes>
                     <Route path = '/' element = { <Landing /> } />
                     <Route path = '/help/' element = { <Help /> } />

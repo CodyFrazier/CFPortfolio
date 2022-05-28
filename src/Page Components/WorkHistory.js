@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const WorkHistory = () => {
     return (
-        <div className = 'colOW'>Work History Page</div>
+        <div className = 'colorOW'>Work History Page</div>
     )
 }
 

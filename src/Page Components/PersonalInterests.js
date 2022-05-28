@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const PersonalInterests = () => {
     return (
-        <div className = 'colOW'>Personal Interests Page</div>
+        <div className = 'colorOW'>Personal Interests Page</div>
     )
 }
 
