@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const ContactInfo = () => {
+const ContactInfo = ({ bp }) => {
 
     //This could be part of a database query
     const [info, setInfo] = useState({
@@ -12,19 +12,21 @@ const ContactInfo = () => {
     })
 
     return (
-        <div className = 'colorOW columnNW alignCenter margin1'>
-            <h1 className = 'padHalf'>{ info.firstName} {info.lastName }</h1>
-            <div className = 'borderOW border5 widthundred margin1'>
-                <span className = 'rowNW padHalf spaceBetweenRow'>
-                    <h3>Phone: </h3>
-                    <div>{ info.cellPhone }</div>
-                </span>
-                <span className = 'rowNW padHalf spaceBetweenRow'>
-                    <h3>Email: </h3>
-                    <div>{ info.email }</div>
-                </span>
-            </div>
-        </div> 
+        <div className = 'colorOW columnNW widthundred'>
+            <div className = {`${ bp.isLarge? 'margin1' : 'topMargin3 leftMargin1 rightMargin1 bottomMargin1' } alignCenter borderAO border5 pad1` }>
+                <h1 className = 'bottomMargin1'>{ info.firstName} {info.lastName }</h1>
+                <div className = 'widthundred'>
+                    <span className = 'borderOW border5 rowNW spaceBetweenRow padHalf marginHalf'>
+                        <h3>Phone: </h3>
+                        <div>{ info.cellPhone }</div>
+                    </span>
+                    <span className = 'borderOW border5 rowNW spaceBetweenRow padHalf marginHalf'>
+                        <h3>Email: </h3>
+                        <div>{ info.email }</div>
+                    </span>
+                </div>
+            </div> 
+        </div>
     )
 }
 

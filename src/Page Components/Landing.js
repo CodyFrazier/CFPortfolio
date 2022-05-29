@@ -1,22 +1,25 @@
 import React, { useEffect, useState } from 'react';
 
-const Landing = () => {
+const Landing = ({ bp }) => {
 
-    //This landing page is a temporary technical example.
-    //operative state to confirm that state changes will rerender the page
-    const [count, setCount] = useState(0);
-
-    const changeCount = op => {
-        op ? setCount(count + 1) : setCount(count - 1);
-    }
-
+    /*
+    **********************************TO DO******************************************
+    1. Determine what aspects of the Portfolio should be displayed as part of the Landing
+    despite also being from other sections
+    2. Create a short blurb describing Technical expertise and skills ( soft, hard )
+    3. Describe development process ?
+    4. Should Education be listed here or in a separate tab?
+    *********************************************************************************
+    */
     return(
-        <div className = 'columnNW alignCenter border5 borderAO margin1'>
-            <div className = 'rowNW spaceAroundRow margin1 widthundred'>
-                <input type = 'button' className = 'bgPG borderAO colorAO border5' onClick = { () => changeCount(true) } value = 'Add' />
-                <input type = 'button' className = 'bgPG borderAO colorAO border5' onClick = { () => changeCount(false) } value = 'Subtract' />
+        <div  className = 'colorOW columnNW widthundred'>
+            <div className = {`${ bp.isLarge? 'margin1' : 'topMargin3 leftMargin1 rightMargin1 bottomMargin1' } alignCenter borderAO border5 pad1` }>
+                <h1 className = { `${ bp.isLarge? '' : 'rowNW justifyCenter' } bottomMargin1` }>Online Portfolio</h1>
+                <h3 className = { `${ bp.isLarge ? '' : 'rowNW justifyCenter' } bottomMargin1 widthundred` }>Cody Frazier • Web Developer</h3>
             </div>
-            <div className = 'colorAO borderAO padHalf marginHalf border5'>{ count }</div>
+            <div className = { `margin1 borderAO border5 pad1` }>
+                Sample Card for Important Things
+            </div>
         </div>
     )
 }

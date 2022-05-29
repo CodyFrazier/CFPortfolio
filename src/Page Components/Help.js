@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
-const Help = () => {
+const Help = ({ bp }) => {
 
     return (
-        <div className = ''>
+        <div className = 'margin3'>
             <div className = 'topBorderAO bottomBorderAO colorOW topMargin1 bottomMargin1 padHalf rowNW spaceAroundRow'>
                 This Will Be A Help Page
             </div>

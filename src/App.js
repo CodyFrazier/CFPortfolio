@@ -60,13 +60,13 @@ const App = () => {
             
             <main className = 'columnNW bgDG alignCenter widthundred'>
                 <Routes>
-                    <Route path = '/' element = { <Landing /> } />
-                    <Route path = '/help/' element = { <Help /> } />
-                    <Route path = '/projects/' element = { <Projects /> } />
-                    <Route path = '/contact/' element = { <ContactInfo /> } />
-                    <Route path = '/workhistory/' element = { <WorkHistory /> } />
-                    <Route path = '/bio/' element = { <Bio /> } />
-                    <Route path = '/interests/' element = { <PersonalInterests /> } />
+                    <Route path = '/' element = { <Landing bp = { breakpoint } /> } />
+                    <Route path = '/help/' element = { <Help bp = { breakpoint } /> } />
+                    <Route path = '/projects/' element = { <Projects bp = { breakpoint } /> } />
+                    <Route path = '/contact/' element = { <ContactInfo bp = { breakpoint } /> } />
+                    <Route path = '/workhistory/' element = { <WorkHistory bp = { breakpoint } /> } />
+                    <Route path = '/bio/' element = { <Bio bp = { breakpoint } /> } />
+                    <Route path = '/interests/' element = { <PersonalInterests bp = { breakpoint } /> } />
                 </Routes>
             </main>
             <Footer />
