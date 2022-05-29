@@ -4,11 +4,11 @@ import Help from './Help.js';
 
 const Footer = () => {
     return (
-        <footer className = 'spaceAroundRow rowNW'>
-            <div>© 2022 Cody Frazier</div>
-            <div>•</div>
+        <footer className = 'spaceAroundRow rowNW widthundred'>
+            <div className = 'padHalf'>© 2022 Cody Frazier</div>
+            <div className = 'padHalf'>•</div>
             <Link to = '/help/'>
-                <div>Help Page</div>
+                <div className = 'padHalf'>Help Page</div>
             </Link>
         </footer>
     )
