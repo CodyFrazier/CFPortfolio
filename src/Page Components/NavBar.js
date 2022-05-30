@@ -24,12 +24,12 @@ const NavBar = ({ bp }) => {
         <div className = { `${ bp.isLarge ? '' : 'z1 widthundred' }` }>
             { bp.isLarge === false && <input type = 'button' className = 'padHalf widthundred bgAO noBorder colorOW' onClick = { () => { setDisplayNav(!displayNav) } } value = 'Menu' /> }
             { (bp.isLarge === true || displayNav === true) && <div className = { `${ bp.isLarge ? 'rowNW spaceAroundRow' : 'columnNW' } widthundred bgAO` }>
-                <Link to = '/' onClick = { () => menuDisplay() } className = 'padHalf undecorated'>Home</Link>
-                <Link to = '/projects/' onClick = { () => menuDisplay() } className = { `${ bp.isLarge ? 'padHalf' : 'bottomPadHalf leftPadHalf' } undecorated` }>Projects</Link>
-                <Link to = '/contact/' onClick = { () => menuDisplay() } className = { `${ bp.isLarge ? 'padHalf' : 'bottomPadHalf leftPadHalf' } undecorated` }>Contact Information</Link>
-                <Link to = '/workhistory/' onClick = { () => menuDisplay() } className = { `${ bp.isLarge ? 'padHalf' : 'bottomPadHalf leftPadHalf' } undecorated` }>Work History</Link>
-                <Link to = '/bio/' onClick = { () => menuDisplay() } className = { `${ bp.isLarge ? 'padHalf' : 'bottomPadHalf leftPadHalf' } undecorated` }>Bio</Link>
-                <Link to = '/interests/' onClick = { () => menuDisplay() } className = { `${ bp.isLarge ? 'padHalf' : 'bottomPadHalf leftPadHalf' } undecorated` }>Personal Interests</Link>
+                <Link to = '/' onClick = { () => menuDisplay() } className = { `${ bp.isLarge ? '' : 'topBorderDG' } padHalf undecorated` }>Home</Link>
+                <Link to = '/projects/' onClick = { () => menuDisplay() } className = { `${ bp.isLarge ? '' : 'topBorderDG' } padHalf undecorated` }>Projects</Link>
+                <Link to = '/contact/' onClick = { () => menuDisplay() } className = { `${ bp.isLarge ? '' : 'topBorderDG' } padHalf undecorated` }>Contact Information</Link>
+                <Link to = '/workhistory/' onClick = { () => menuDisplay() } className = { `${ bp.isLarge ? '' : 'topBorderDG' } padHalf undecorated` }>Work History</Link>
+                <Link to = '/bio/' onClick = { () => menuDisplay() } className = { `${ bp.isLarge ? '' : 'topBorderDG' } padHalf undecorated` }>Bio</Link>
+                <Link to = '/interests/' onClick = { () => menuDisplay() } className = { `${ bp.isLarge ? '' : 'topBorderDG' } padHalf undecorated` }>Personal Interests</Link>
             </div> }
         </div>
     )
