@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const ContactInfo = ({ bp }) => {
+const ContactInfo = ({ bp, setError }) => {
 
     //This could be part of a database query
     const [info, setInfo] = useState({

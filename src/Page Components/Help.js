@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const Help = ({ bp }) => {
+const Help = ({ bp, setError }) => {
 
     return (
         <div className = 'margin3'>

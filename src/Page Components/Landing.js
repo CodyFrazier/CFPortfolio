@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const Landing = ({ bp }) => {
+const Landing = ({ bp, setError }) => {
 
     /*
     **********************************TO DO******************************************
