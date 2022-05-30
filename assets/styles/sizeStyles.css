@@ -6,6 +6,15 @@
     height: 100%;
 }
 
+.maxWidth1Rem{
+    max-width: 1rem;
+}
+.maxWidth50px{
+    max-width: 50px;
+}
+.maxWidth1{
+    max-width: 100px;
+}
 .maxWidth2{
     max-width: 200px;
 }
