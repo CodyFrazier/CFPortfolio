@@ -40,7 +40,16 @@ const App = () => {
                 })
             }
         }
-        
+    }
+
+    const newError = (err) => {
+        //This is explicitly for creating an error notification, it is not used to handle errors.
+        setError({
+            id: err.id,
+            message: err.message != '' ? err.message : 'No Information Available About This Error',
+            hasError: true,
+            source: err.source != '' ? err.source : 'Unknown Source'
+        })
     }
 
     //UseEffects
@@ -58,20 +67,20 @@ const App = () => {
     return (
     <div id = 'container'>
         <Router>
-            <NavBar bp = { breakpoint } setError = { setError } />
+            <NavBar bp = { breakpoint } setError = { newError } />
             { error.hasError && <ErrorBar error = { error } bp = { breakpoint } /> }
             <main className = 'columnNW bgDG alignCenter widthundred'>
                 <Routes>
-                    <Route path = '/' element = { <Landing bp = { breakpoint } setError = { setError } /> } />
-                    <Route path = '/help/' element = { <Help bp = { breakpoint } setError = { setError } /> } />
-                    <Route path = '/projects/' element = { <Projects bp = { breakpoint } setError = { setError } /> } />
-                    <Route path = '/contact/' element = { <ContactInfo bp = { breakpoint } setError = { setError }/> } />
-                    <Route path = '/workhistory/' element = { <WorkHistory bp = { breakpoint } setError = { setError } /> } />
-                    <Route path = '/bio/' element = { <Bio bp = { breakpoint } setError = { setError } /> } />
-                    <Route path = '/interests/' element = { <PersonalInterests bp = { breakpoint } setError = { setError } /> } />
+                    <Route path = '/' element = { <Landing bp = { breakpoint } setError = { newError } /> } />
+                    <Route path = '/help/' element = { <Help bp = { breakpoint } setError = { newError } /> } />
+                    <Route path = '/projects/' element = { <Projects bp = { breakpoint } setError = { newError } /> } />
+                    <Route path = '/contact/' element = { <ContactInfo bp = { breakpoint } setError = { newError }/> } />
+                    <Route path = '/workhistory/' element = { <WorkHistory bp = { breakpoint } setError = { newError } /> } />
+                    <Route path = '/bio/' element = { <Bio bp = { breakpoint } setError = { newError } /> } />
+                    <Route path = '/interests/' element = { <PersonalInterests bp = { breakpoint } setError = { newError } /> } />
                 </Routes>
             </main>
-            <Footer setError = { setError } />
+            <Footer setError = { newError } />
         </Router>
     </div>
     )
