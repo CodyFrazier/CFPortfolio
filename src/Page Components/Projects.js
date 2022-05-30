@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ProjectHistoryCardGrid from '../Generic Components/ProjectHistoryCardGrid.js';
 
-const Projects = ({ bp }) => {
+const Projects = ({ bp, setError }) => {
 
     /*
     ************************************TO DO**********************************

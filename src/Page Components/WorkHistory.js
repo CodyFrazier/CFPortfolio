@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import WorkHistoryCardGrid from '../Generic Components/WorkHistoryCardGrid.js';
 
-const WorkHistory = ({ bp }) => {
+const WorkHistory = ({ bp, setError }) => {
     const workArray = [
         {
             employer: 'United Parcel Service',

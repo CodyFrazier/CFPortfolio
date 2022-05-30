@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Landing from './Page Components/Landing.js';
 import NavBar from './Page Components/NavBar.js';
 import Footer from './Page Components/Footer.js';
+import ErrorBar from './Generic Components/ErrorBar.js';
 import Help from './Page Components/Help.js';
 import Projects from './Page Components/Projects.js';
 import ContactInfo from './Page Components/ContactInfo.js';
@@ -17,6 +18,7 @@ console.log('Loading App...');
 const App = () => {
     //State
     const [breakpoint, setBreakpoint] = useState({isLarge: window.innerWidth > 789 ? true : false, width: window.innerWidth });
+    const [error, setError] = useState({id: 200, hasError: false, message: 'No Errors At This Time', source: 'List Either User, Server, HTML, or other source/cause of the error'});
 
     //Methods
     const checkWindowSize = () => {
@@ -38,7 +40,16 @@ const App = () => {
                 })
             }
         }
-        
+    }
+
+    const newError = (err) => {
+        //This is explicitly for creating an error notification, it is not used to handle errors.
+        setError({
+            id: err.id,
+            message: err.message != '' ? err.message : 'No Information Available About This Error',
+            hasError: true,
+            source: err.source != '' ? err.source : 'Unknown Source'
+        })
     }
 
     //UseEffects
@@ -56,20 +67,20 @@ const App = () => {
     return (
     <div id = 'container'>
         <Router>
-            <NavBar bp = { breakpoint } />
-            
+            <NavBar bp = { breakpoint } setError = { newError } />
+            { error.hasError && <ErrorBar error = { error } bp = { breakpoint } /> }
             <main className = 'columnNW bgDG alignCenter widthundred'>
                 <Routes>
-                    <Route path = '/' element = { <Landing bp = { breakpoint } /> } />
-                    <Route path = '/help/' element = { <Help bp = { breakpoint } /> } />
-                    <Route path = '/projects/' element = { <Projects bp = { breakpoint } /> } />
-                    <Route path = '/contact/' element = { <ContactInfo bp = { breakpoint } /> } />
-                    <Route path = '/workhistory/' element = { <WorkHistory bp = { breakpoint } /> } />
-                    <Route path = '/bio/' element = { <Bio bp = { breakpoint } /> } />
-                    <Route path = '/interests/' element = { <PersonalInterests bp = { breakpoint } /> } />
+                    <Route path = '/' element = { <Landing bp = { breakpoint } setError = { newError } /> } />
+                    <Route path = '/help/' element = { <Help bp = { breakpoint } setError = { newError } /> } />
+                    <Route path = '/projects/' element = { <Projects bp = { breakpoint } setError = { newError } /> } />
+                    <Route path = '/contact/' element = { <ContactInfo bp = { breakpoint } setError = { newError }/> } />
+                    <Route path = '/workhistory/' element = { <WorkHistory bp = { breakpoint } setError = { newError } /> } />
+                    <Route path = '/bio/' element = { <Bio bp = { breakpoint } setError = { newError } /> } />
+                    <Route path = '/interests/' element = { <PersonalInterests bp = { breakpoint } setError = { newError } /> } />
                 </Routes>
             </main>
-            <Footer />
+            <Footer setError = { newError } />
         </Router>
     </div>
     )
