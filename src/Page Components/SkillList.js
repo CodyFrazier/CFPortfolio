@@ -6,15 +6,19 @@ const SkillList = ({ bp, setError }) => {
     const skillArray = [
         {
             name : 'Computer Science Skills',
-            skillArr : [ 'Javascript', 'CSS', 'HTML', 'React', 'SQL', 'PostgreSQL',
-                'Git', 'Github', 'Node.js', 'Express', 'Heroku', 'Python',
-                'Java', 'C++', 'ASM' ]
+            skillArr : [ { name : 'Javascript', image : '' }, { name : 'CSS', image : '' }, 
+                { name : 'HTML', image : '' }, { name : 'React', image : '' }, { name : 'SQL', image : '' },
+                { name : 'PostgreSQL', image : '' }, { name : 'Git', image : '' },
+                { name : 'Github', image : '' }, { name : 'Node.js', image : '' },
+                { name : 'Express', image : '' }, { name : 'Heroku', image : '' },
+                { name : 'Python', image : '' }, { name : 'Java', image : '' }, { name : 'C++', image : '' },
+                { name : 'ASM', image : '' } ]
         },
         {
             name: 'Behavioral Therapy Skills',
-            skillArr : [ 'Applied Behavioral Analysis (ABA)', 
-                'Nonviolent Crisis Intervention (CPI)',
-                'Direct Support Professional Certification I & II' ]
+            skillArr : [ { name : 'Applied Behavioral Analysis (ABA)', site : '' },
+            { name : 'Nonviolent Crisis Intervention (CPI)', site : '' },
+            { name : 'Direct Support Professional Certification I & II', site : '' } ]
         }
     ]
     return (

@@ -22,7 +22,7 @@ const NavBar = ({ bp, setError }) => {
 
     return (
         <div className = { `${ bp.isLarge ? '' : 'z1 widthundred' }` }>
-            { bp.isLarge === false && <input type = 'button' className = 'padHalf widthundred bgAO noBorder colorOW' onClick = { () => { setDisplayNav(!displayNav) } } value = 'Menu' /> }
+            { bp.isLarge === false && <input type = 'button' className = 'padHalf widthundred bgAO noBorder colorOW' onClick = { () => { setDisplayNav(!displayNav) } } value = { `${ displayNav ? 'Collapse' : 'Menu' }` } /> }
             { (bp.isLarge === true || displayNav === true) && <div className = { `${ bp.isLarge ? 'rowNW spaceAroundRow' : 'columnNW' } widthundred bgAO` }>
                 <Link to = '/' onClick = { () => menuDisplay() } className = { `${ bp.isLarge ? '' : 'topBorderDG' } padHalf undecorated` }>Home</Link>
                 <Link to = '/projects/' onClick = { () => menuDisplay() } className = { `${ bp.isLarge ? '' : 'topBorderDG' } padHalf undecorated` }>Projects</Link>

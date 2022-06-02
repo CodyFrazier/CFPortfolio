@@ -10,7 +10,7 @@ const SkillCard = ({ array }) => {
                         <div className = 'pad1 scrollable maxHeight2'>{
                             skillset.skillArr.map((skill, idx) => {
                                 return(
-                                    <div key = { `skill${ idx }` } className = 'topPadHalf bottomPadHalf'>{ skill }</div>
+                                    <div key = { `skill${ idx }` } className = 'topPadHalf bottomPadHalf'>{ skill.name }</div>
                                 )
                             })
                         }</div>
