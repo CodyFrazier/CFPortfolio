@@ -60,3 +60,7 @@
 .maxHeight30vh{
     max-height: 30vh;
 }
+
+.scrollable{
+    overflow-y: scroll;
+}

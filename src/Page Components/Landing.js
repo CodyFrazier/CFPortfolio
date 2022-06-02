@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Landing = ({ bp, setError }) => {
 
@@ -18,7 +19,7 @@ const Landing = ({ bp, setError }) => {
                 <h3 className = { `${ bp.isLarge ? '' : 'rowNW justifyCenter' } widthundred` }>Cody Frazier • Web Developer</h3>
             </div>
             <div className = { `margin1 borderAO border5 pad1` }>
-                Sample Card for Important Things
+                <Link to = '/skills/' className = 'undecorated'>Cody Frazier's Technical Skills</Link>
             </div>
         </div>
     )
