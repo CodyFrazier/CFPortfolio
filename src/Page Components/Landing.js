@@ -15,7 +15,7 @@ const Landing = ({ bp, setError }) => {
         <div  className = 'colorOW columnNW widthundred'>
             <div className = {`${ bp.isLarge? 'margin1' : 'topMargin3 leftMargin1 rightMargin1 bottomMargin1' } alignCenter borderAO border5 pad1` }>
                 <h1 className = { `${ bp.isLarge? '' : 'rowNW justifyCenter' } bottomMargin1` }>Online Portfolio</h1>
-                <h3 className = { `${ bp.isLarge ? '' : 'rowNW justifyCenter' } bottomMargin1 widthundred` }>Cody Frazier • Web Developer</h3>
+                <h3 className = { `${ bp.isLarge ? '' : 'rowNW justifyCenter' } widthundred` }>Cody Frazier • Web Developer</h3>
             </div>
             <div className = { `margin1 borderAO border5 pad1` }>
                 Sample Card for Important Things

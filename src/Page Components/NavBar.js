@@ -29,7 +29,6 @@ const NavBar = ({ bp, setError }) => {
                 <Link to = '/contact/' onClick = { () => menuDisplay() } className = { `${ bp.isLarge ? '' : 'topBorderDG' } padHalf undecorated` }>Contact Information</Link>
                 <Link to = '/workhistory/' onClick = { () => menuDisplay() } className = { `${ bp.isLarge ? '' : 'topBorderDG' } padHalf undecorated` }>Work History</Link>
                 <Link to = '/bio/' onClick = { () => menuDisplay() } className = { `${ bp.isLarge ? '' : 'topBorderDG' } padHalf undecorated` }>Bio</Link>
-                <Link to = '/interests/' onClick = { () => menuDisplay() } className = { `${ bp.isLarge ? '' : 'topBorderDG' } padHalf undecorated` }>Personal Interests</Link>
             </div> }
         </div>
     )

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Bio = ({ bp, setError }) => {
 
@@ -9,10 +10,11 @@ const Bio = ({ bp, setError }) => {
     */
     return (
         <div className = 'colorOW columnNW'>
+            
             <div className = {`${ bp.isLarge? '' : 'topMargin3' } margin1 borderAO border5 pad1` }>
                 <h1 className = { `${ bp.isLarge? '' : 'rowNW justifyCenter' } bottomMargin1` }>Cody Frazier Bio</h1>
                 <div className = { `${ bp.isLarge ? 'rowNW' : '' }` }>
-                    <img src = '../assets/img/CFBioPic.png' className = 'widthundred maxWidth4' />
+                    <img src = '../assets/img/personalinterests/CFBioPic.png' className = 'widthundred maxWidth4' />
                     <div className = { `${ bp.isLarge ? 'leftPad1' : '' }` }><em>Cody Frazier</em> is a Hoomuns Being with a pulse, 
                         two eyes, and a pair of hands that can follow 
                         input from his brain. And Someday he may write a serious
@@ -21,6 +23,10 @@ const Bio = ({ bp, setError }) => {
                 </div>
                 
             </div>
+            <div className = 'leftMargin1 bottomMargin1 rightMargin1 borderAO border5 pad1'>
+                <Link to = '/interests/' className = { `${ bp.isLarge ? '' : '' } undecorated` }>Personal Interests</Link>  
+            </div>
+            
         </div>
     )
 }

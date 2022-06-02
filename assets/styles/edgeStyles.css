@@ -260,3 +260,27 @@
 .indent1{
     text-indent: 1rem;
 }
+
+/* Float Styles */
+
+.floatLeft{
+    float: left;
+}
+
+.floatRight{
+    float: right;
+}
+
+.floatNone{
+    float: none;
+}
+
+/* Overflow Styles */
+
+.noverflow{
+    overflow: hidden;
+}
+
+.overflowVis{
+    overflow: visible;
+}

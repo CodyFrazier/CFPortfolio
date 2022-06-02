@@ -2,9 +2,14 @@
     display: grid;
 }
 
-.gridMatrix{
+/* Grid Formats */
+.gridMatrix300{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.gridMatrix500{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 
 /* Grid Gap Sizing */
