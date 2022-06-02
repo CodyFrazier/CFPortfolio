@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const WorkHistoryCardGrid = ({ array }) => {
     return (
-        <div className = 'gridMatrix bottomMargin1 leftMargin1 rightMargin1 gridGap1'>{
+        <div className = 'gridMatrix300 bottomMargin1 leftMargin1 rightMargin1 gridGap1'>{
             array.map((element, idx) => {
                 return(
                     <div key = { `card${ idx }` } className = 'colorOW columnNW borderAO border5'>

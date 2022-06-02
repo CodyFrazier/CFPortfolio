@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 const Help = ({ bp, setError }) => {
 
     return (
-        <div className = 'margin3'>
+        <div className = 'topMargin3'>
             <div className = 'topBorderAO bottomBorderAO colorOW topMargin1 bottomMargin1 padHalf rowNW spaceAroundRow'>
                 This Will Be A Help Page
             </div>

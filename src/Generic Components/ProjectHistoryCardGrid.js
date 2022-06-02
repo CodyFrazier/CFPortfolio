@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const ProjectHistoryCardGrid = ({ array }) => {
     return (
-        <div className = 'gridMatrix bottomMargin1 leftMargin1 rightMargin1 gridGap1'>{
+        <div className = 'gridMatrix300 bottomMargin1 leftMargin1 rightMargin1 gridGap1'>{
             array.map((project, idx) => {
                 console.log('Project:');
                 console.log(project);
