@@ -10,7 +10,11 @@ const SkillCard = ({ array }) => {
                         <div className = 'pad1 scrollable maxHeight2'>{
                             skillset.skillArr.map((skill, idx) => {
                                 return(
-                                    <div key = { `skill${ idx }` } className = 'topPadHalf bottomPadHalf'>{ skill.name }</div>
+                                    <div key = { `skill${ idx }` } className = 'topPadHalf bottomPadHalf rowNW spaceBetweenRow'>
+                                        { skill.site && <a href = { `${ skill.site }` } target = '_blank'><div>{ skill.name }</div></a> }
+                                        { !skill.site && <div>{ skill.name }</div> }
+                                        { skill.image && <div>{ skill.image }</div> }
+                                    </div>
                                 )
                             })
                         }</div>

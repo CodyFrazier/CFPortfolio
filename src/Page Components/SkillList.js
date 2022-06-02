@@ -16,9 +16,9 @@ const SkillList = ({ bp, setError }) => {
         },
         {
             name: 'Behavioral Therapy Skills',
-            skillArr : [ { name : 'Applied Behavioral Analysis (ABA)', site : '' },
-            { name : 'Nonviolent Crisis Intervention (CPI)', site : '' },
-            { name : 'Direct Support Professional Certification I & II', site : '' } ]
+            skillArr : [ { name : 'Applied Behavioral Analysis (ABA)', site : 'https://www.psychologytoday.com/us/therapy-types/applied-behavior-analysis' },
+            { name : 'Nonviolent Crisis Intervention (CPI)', site : 'https://www.crisisprevention.com/Our-Programs/Nonviolent-Crisis-Intervention' },
+            { name : 'Direct Support Professional Certification I & II', site : 'https://www.dds.ca.gov/services/dspt/' } ]
         }
     ]
     return (
