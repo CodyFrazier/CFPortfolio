@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import WorkCard from '../Generic Components/WorkCard.js';
 import ProjectCard from '../Generic Components/ProjectCard.js';
+import InterestCard from '../Generic Components/InterestCard.js';
 const { workHistory, projects, interests } = require('../ObjectLists');
 
 const Landing = ({ bp, setError }) => {
@@ -33,7 +34,7 @@ const Landing = ({ bp, setError }) => {
                 <div className = 'scrollable rowNW margin1'>
                 <WorkCard element = { workHistory.workArray[randomFeature(workHistory.workArray)] }  idx = { 0 } />
                 <ProjectCard element = { projects.projectArray[randomFeature(projects.projectArray)] } idx = { 0 } />
-                <ProjectCard element = { projects.projectArray[randomFeature(projects.projectArray)] } idx = { 0 } />
+                <InterestCard element = { interests.interestArray[randomFeature(interests.interestArray)] } idx = { 0 } bp = { bp } />
                 </div>
             </div>
         </div>

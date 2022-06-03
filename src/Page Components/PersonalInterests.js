@@ -8,7 +8,7 @@ const PersonalInterests = ({ bp, setError }) => {
             <div className = {`${ bp.isLarge? 'margin1' : 'topMargin3 leftMargin1 rightMargin1 bottomMargin1' } alignCenter borderAO border5 pad1` }>
                 <h1 className = { `${ bp.isLarge? '' : 'rowNW justifyCenter' }` }>Personal Interests</h1>
             </div>
-            <PersonalInterestCardGrid bp = { bp } array = { interests.personalInterestArray }/>
+            <PersonalInterestCardGrid bp = { bp } array = { interests.interestArray }/>
         </div>
     )
 }

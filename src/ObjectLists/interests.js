@@ -1,5 +1,5 @@
 const interests = {
-    personalInterestArray : [
+    interestArray : [
         {
             interest: 'Endurance Running',
             image: '../assets/img/personalinterests/CodyRunner.png',
