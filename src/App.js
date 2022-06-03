@@ -10,6 +10,7 @@ import ContactInfo from './Page Components/ContactInfo.js';
 import WorkHistory from './Page Components/WorkHistory.js';
 import Bio from './Page Components/Bio.js';
 import PersonalInterests from './Page Components/PersonalInterests.js';
+import SkillList from './Page Components/SkillList.js';
 
 import axios from 'axios';
 
@@ -78,6 +79,7 @@ const App = () => {
                     <Route path = '/workhistory/' element = { <WorkHistory bp = { breakpoint } setError = { newError } /> } />
                     <Route path = '/bio/' element = { <Bio bp = { breakpoint } setError = { newError } /> } />
                     <Route path = '/interests/' element = { <PersonalInterests bp = { breakpoint } setError = { newError } /> } />
+                    <Route path = '/skills/' element = { <SkillList bp = { breakpoint } setError = { newError } /> } />
                 </Routes>
             </main>
             <Footer setError = { newError } />

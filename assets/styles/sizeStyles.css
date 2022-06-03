@@ -34,6 +34,10 @@
     max-width: 700px;
 }
 
+.maxWidth90vw{
+    max-width: 90vw;
+}
+
 .maxHeight2{
     max-height: 200px;
 }
@@ -59,4 +63,16 @@
 
 .maxHeight30vh{
     max-height: 30vh;
+}
+
+.vh30{
+    height: 40vh;
+}
+
+.vw90{
+    width: 90vw;
+}
+
+.scrollable{
+    overflow-y: scroll;
 }
