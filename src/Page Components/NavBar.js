@@ -27,6 +27,7 @@ const NavBar = ({ bp, setError }) => {
                 <Link to = '/' onClick = { () => menuDisplay() } className = { `${ bp.isLarge ? '' : 'topBorderDG' } padHalf undecorated` }>Home</Link>
                 <Link to = '/projects/' onClick = { () => menuDisplay() } className = { `${ bp.isLarge ? '' : 'topBorderDG' } padHalf undecorated` }>Projects</Link>
                 <Link to = '/contact/' onClick = { () => menuDisplay() } className = { `${ bp.isLarge ? '' : 'topBorderDG' } padHalf undecorated` }>Contact Information</Link>
+                <Link to = '/education/' onClick = { () => menuDisplay() } className = { `${ bp.isLarge ? '' : 'topBorderDG' } padHalf undecorated` }>Education</Link>
                 <Link to = '/workhistory/' onClick = { () => menuDisplay() } className = { `${ bp.isLarge ? '' : 'topBorderDG' } padHalf undecorated` }>Work History</Link>
                 <Link to = '/bio/' onClick = { () => menuDisplay() } className = { `${ bp.isLarge ? '' : 'topBorderDG' } padHalf undecorated` }>Bio</Link>
             </div> }
