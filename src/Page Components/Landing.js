@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import WorkCard from '../Generic Components/WorkCard.js';
-const { workHistory, skills, projects, interests } = require('../ObjectLists');
+import ProjectCard from '../Generic Components/ProjectCard.js';
+const { workHistory, projects, interests } = require('../ObjectLists');
 
 const Landing = ({ bp, setError }) => {
 
@@ -29,8 +30,10 @@ const Landing = ({ bp, setError }) => {
             </div>
             <div className = { `rightMargin1 leftMargin1 bottomMargin1 borderAO border5 columnNW` }>
                 <h4 className = 'bottomBorderOW pad1'>Featured Items</h4>
-                <div className = 'scrollable rowNW'>
+                <div className = 'scrollable rowNW margin1'>
                 <WorkCard element = { workHistory.workArray[randomFeature(workHistory.workArray)] }  idx = { 0 } />
+                <ProjectCard element = { projects.projectArray[randomFeature(projects.projectArray)] } idx = { 0 } />
+                <ProjectCard element = { projects.projectArray[randomFeature(projects.projectArray)] } idx = { 0 } />
                 </div>
             </div>
         </div>
