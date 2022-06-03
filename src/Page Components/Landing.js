@@ -18,7 +18,7 @@ const Landing = ({ bp, setError }) => {
                 <h1 className = { `${ bp.isLarge? '' : 'rowNW justifyCenter' } bottomMargin1` }>Online Portfolio</h1>
                 <h3 className = { `${ bp.isLarge ? '' : 'rowNW justifyCenter' } widthundred` }>Cody Frazier • Web Developer</h3>
             </div>
-            <div className = { `margin1 borderAO border5 pad1` }>
+            <div className = { `rightMargin1 leftMargin1 bottomMargin1 borderAO border5 pad1` }>
                 <Link to = '/skills/' className = 'undecorated'>Cody Frazier's Technical Skills</Link>
             </div>
         </div>
