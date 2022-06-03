@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+const { workHistory, skills, projects, interests } = require('../ObjectLists');
 
 const Landing = ({ bp, setError }) => {
 
@@ -20,6 +21,12 @@ const Landing = ({ bp, setError }) => {
             </div>
             <div className = { `rightMargin1 leftMargin1 bottomMargin1 borderAO border5 pad1` }>
                 <Link to = '/skills/' className = 'undecorated'>Cody Frazier's Technical Skills</Link>
+            </div>
+            <div className = { `rightMargin1 leftMargin1 bottomMargin1 borderAO border5 columnNW` }>
+                <h4 className = 'bottomBorderOW pad1'>Featured Items</h4>
+                <div className = 'scrollable rowNW'>
+
+                </div>
             </div>
         </div>
     )
