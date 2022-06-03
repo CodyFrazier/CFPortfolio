@@ -1,18 +1,17 @@
 const education = {
     educationArray : [
         {
-            name : 'High School',
-            schoolName : 'Atascadero High School',
-            abbr : 'AHS',
+            name : 'Programming Bootcamp',
+            schoolName : 'Fullstack Academy',
+            abbr : 'FSA',
             location : {
-                address : '1 High School Hill',
-                city : 'Atascadero',
-                state : 'California',
-                stateAbbr : 'CA',
-                zipCode : '93422'
+                address : '5 Hanover Square 11th floor',
+                city : 'New York',
+                cityAbbr : 'NY',
+                zipCode : '10004',
             },
-            degree : 'High School Diploma',
-            site : 'https://www.atasusd.org/'
+            degree : 'Certificate of Web Development',
+            site : 'https://www.fullstackacademy.com/'
         },
         {
             name : 'College',
@@ -29,17 +28,20 @@ const education = {
             site : 'https://www.cuesta.edu/'
         },
         {
-            name : 'Programming Bootcamp',
-            schoolName : 'Fullstack Academy',
-            abbr : 'FSA',
+            name : 'High School',
+            schoolName : 'Atascadero High School',
+            abbr : 'AHS',
             location : {
-                address : '5 Hanover Square 11th floor',
-                city : 'New York',
-                cityAbbr : 'NY',
-                zipCode : '10004',
+                address : '1 High School Hill',
+                city : 'Atascadero',
+                state : 'California',
+                stateAbbr : 'CA',
+                zipCode : '93422'
             },
-            degree : 'Certificate of Web Development',
-            site : 'https://www.fullstackacademy.com/'
+            degree : 'High School Diploma',
+            site : 'https://www.atasusd.org/'
         }
     ]
 }
+
+module.exports = education;
