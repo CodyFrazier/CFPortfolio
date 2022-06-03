@@ -31,10 +31,16 @@ const Landing = ({ bp, setError }) => {
             </div>
             <div className = { `rightMargin1 leftMargin1 bottomMargin1 borderAO border5 columnNW` }>
                 <h4 className = 'bottomBorderOW pad1'>Featured Items</h4>
-                <div className = 'scrollable rowNW margin1'>
-                <WorkCard element = { workHistory.workArray[randomFeature(workHistory.workArray)] }  idx = { 0 } />
-                <ProjectCard element = { projects.projectArray[randomFeature(projects.projectArray)] } idx = { 0 } />
-                <InterestCard element = { interests.interestArray[randomFeature(interests.interestArray)] } idx = { 0 } bp = { bp } />
+                <div className = 'margin1 scrollable'>
+                    <div className = 'padHalf'>
+                        <h3 className = 'padHalf columnNW colorAO borderOW border5 bottomMargin1'>Web Dev Project</h3>
+                        <ProjectCard element = { projects.projectArray[randomFeature(projects.projectArray)] } idx = { 0 } />
+                    </div>
+                    <div className = 'padHalf'>
+                        <h3 className = 'padHalf columnNW colorAO borderOW border5 bottomMargin1'>Work History</h3>
+                        <WorkCard element = { workHistory.workArray[randomFeature(workHistory.workArray)] }  idx = { 0 } />
+                    </div>
+                                   
                 </div>
             </div>
         </div>
