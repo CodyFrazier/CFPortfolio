@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import WorkCard from '../Generic Components/WorkCard.js';
 const { workHistory, skills, projects, interests } = require('../ObjectLists');
 
 const Landing = ({ bp, setError }) => {
@@ -10,9 +11,13 @@ const Landing = ({ bp, setError }) => {
     despite also being from other sections
     2. Create a short blurb describing Technical expertise and skills ( soft, hard )
     3. Describe development process ?
-    4. Should Education be listed here or in a separate tab?
+  x 4. ------->Should Education be listed here or in a separate tab? SEPARATE. 
     *********************************************************************************
     */
+   const randomFeature = arr => {
+       return (Math.floor(Math.random() * arr.length));
+   }
+
     return(
         <div  className = 'colorOW columnNW widthundred'>
             <div className = {`${ bp.isLarge? 'margin1' : 'topMargin3 leftMargin1 rightMargin1 bottomMargin1' } alignCenter borderAO border5 pad1` }>
@@ -25,7 +30,7 @@ const Landing = ({ bp, setError }) => {
             <div className = { `rightMargin1 leftMargin1 bottomMargin1 borderAO border5 columnNW` }>
                 <h4 className = 'bottomBorderOW pad1'>Featured Items</h4>
                 <div className = 'scrollable rowNW'>
-
+                <WorkCard element = { workHistory.workArray[randomFeature(workHistory.workArray)] }  idx = { 0 } />
                 </div>
             </div>
         </div>
