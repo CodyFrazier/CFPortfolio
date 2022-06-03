@@ -7,6 +7,7 @@ import ErrorBar from './Generic Components/ErrorBar.js';
 import Help from './Page Components/Help.js';
 import Projects from './Page Components/Projects.js';
 import ContactInfo from './Page Components/ContactInfo.js';
+import Education from './Page Components/Education.js';
 import WorkHistory from './Page Components/WorkHistory.js';
 import Bio from './Page Components/Bio.js';
 import PersonalInterests from './Page Components/PersonalInterests.js';
@@ -75,7 +76,8 @@ const App = () => {
                     <Route path = '/' element = { <Landing bp = { breakpoint } setError = { newError } /> } />
                     <Route path = '/help/' element = { <Help bp = { breakpoint } setError = { newError } /> } />
                     <Route path = '/projects/' element = { <Projects bp = { breakpoint } setError = { newError } /> } />
-                    <Route path = '/contact/' element = { <ContactInfo bp = { breakpoint } setError = { newError }/> } />
+                    <Route path = '/contact/' element = { <ContactInfo bp = { breakpoint } setError = { newError } /> } />
+                    <Route path = '/education/' element = { <Education bp = { breakpoint } setError = { newError } /> } />
                     <Route path = '/workhistory/' element = { <WorkHistory bp = { breakpoint } setError = { newError } /> } />
                     <Route path = '/bio/' element = { <Bio bp = { breakpoint } setError = { newError } /> } />
                     <Route path = '/interests/' element = { <PersonalInterests bp = { breakpoint } setError = { newError } /> } />
