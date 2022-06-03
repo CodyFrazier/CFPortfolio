@@ -67,6 +67,10 @@ select:focus{
     text-align: center;
 }
 
+.textAlignRight{
+    text-align: right;
+}
+
 .noBorder{
     border: 0px;
 }

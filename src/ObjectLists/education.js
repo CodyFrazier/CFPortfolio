@@ -7,7 +7,8 @@ const education = {
             location : {
                 address : '5 Hanover Square 11th floor',
                 city : 'New York',
-                cityAbbr : 'NY',
+                state: 'New York',
+                stateAbbr : 'NY',
                 zipCode : '10004',
             },
             degree : 'Certificate of Web Development',
