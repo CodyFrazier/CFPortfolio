@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const PersonalInterestCard = ({ bp, array }) => {
+const PersonalInterestCardGrid = ({ bp, array }) => {
 
     return (
         <div className = 'gridMatrix300 bottomMargin1 leftMargin1 rightMargin1 gridGap1'>{
@@ -24,4 +24,4 @@ const PersonalInterestCard = ({ bp, array }) => {
     )
 }
 
-export default PersonalInterestCard;
+export default PersonalInterestCardGrid;
