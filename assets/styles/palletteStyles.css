@@ -62,6 +62,9 @@
 .bgPG{
     background-color: #030303;
 }
+.bgPGRGBA{
+    background-color: rgba(3, 3, 3, 70%);
+}
 .borderPG{
     border: 1px solid #030303;
 }
