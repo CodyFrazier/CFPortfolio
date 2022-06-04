@@ -167,6 +167,18 @@
     padding-left: 3rem;
 }
 
+/* Right Margins */
+
+.rightMargin4 {
+    margin-right: 4rem;
+}
+.rightMargin8 {
+    margin-right: 8rem;
+}
+.rightMargin14 {
+    margin-right: 14rem;
+}
+
 /*pixel margins*/
 .pixMargin1{
     margin: 1px;
@@ -207,6 +219,9 @@
 }
 .border15{
     border-radius: 15px;
+}
+.border20{
+    border-radius: 20px;
 }
 .border50{
     border-radius: 50%;

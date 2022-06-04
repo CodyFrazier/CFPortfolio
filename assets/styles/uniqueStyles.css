@@ -82,3 +82,12 @@ select:focus{
 .noverflow{
     overflow: hidden;
 }
+
+.menuConstants{
+    overflow: hidden;
+    padding: .5rem;
+    padding-left: 1rem;
+    background-color: #030303b3;
+    backdrop-filter: blur(4px);
+    text-decoration: none;
+}
